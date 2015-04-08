@@ -1,0 +1,41 @@
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.menu .menu-item {
+  padding: 0 20px;
+}
+.menu .menu-item a {
+  display: inline-block;
+  width: 100%;
+  color: #000;
+  line-height: 60px;
+  border-bottom: 1px solid #edf1f2;
+  margin-right: -20px;
+}
+.menu .menu-item a:hover {
+  color: #0175C2;
+}
+.menu .menu-item i {
+  display: inline-block;
+  width: 20px;
+  line-height: 60px;
+}
+.menu .menu-item:last-child a {
+  border: none;
+}
+.menu .slide-bar {
+  float: left;
+  height: 60px;
+  border: 1px solid #0175C2;
+  transform: translateY(0);
+  transition: transform .3s ease;
+}
+.menu.fix {
+  position: fixed;
+  width: 260px;
+  top: 0;
+}

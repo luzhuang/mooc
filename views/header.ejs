@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>西电MOOC</title>
+    <link rel='stylesheet' href='/stylesheets/header.css' />
+    <script src='/javascripts/zepto.js'></script>
+  </head>
+  <body>
+    <div class="header">
+        <a href="/"><div class="title">西电MOOC</div></a>
+        <ul class="nav">
+          <% for(var i=0;i<navItems.length;i++) { %>
+           <li class="nav-item"><a href="javascript:;"><%=navItems[i]%></a></li>
+          <% } %>
+        </ul>
+    </div>

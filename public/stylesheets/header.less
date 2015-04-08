@@ -1,0 +1,71 @@
+@header-height:60px;
+@font-face {
+  font-family: 'iconfont';
+  src: url('/icon-font/iconfont.eot'); /* IE9*/
+  src: url('/icon-font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('/icon-font/iconfont.woff') format('woff'), /* chrome、firefox */
+  url('/icon-font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('/icon-font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;padding: 0;
+  font: 14px "Microsoft YaHei", Helvetica, Arial, sans-serif;
+  background: #EDEFF0;
+}
+a,a:hover,a:visited{
+  color:#000; 
+  text-decoration: none;
+}
+.cf{
+  *zoom:1;
+  &:before,&:after{
+    content:"";
+    display: table;
+  }
+  &:after{
+    clear:both;
+  }
+}
+.header{
+  margin: 0;
+  height: @header-height;
+  background: #001C7D;
+  .title,.nav{
+    display: inline-block;
+    margin: 0;padding: 0;
+    height: 100%;
+  }
+  .title{
+    color:#fff;
+    vertical-align:top;
+    margin:0 75px;
+    line-height: @header-height;
+    font-size: 24px;
+  }
+  .nav{
+    list-style-type: none;
+    .nav-item{
+      float: left;
+      width: 100px;
+      height: 100%;
+      text-align: center;
+      line-height: @header-height;
+      a{
+        display: block;
+        height: 100%; 
+        color: #b9c8e0;
+        &:hover{
+          color: #fff;
+          background-color: #1546ea;
+        }
+      }
+    }
+  }
+}

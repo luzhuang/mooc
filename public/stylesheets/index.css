@@ -1,0 +1,15 @@
+.main {
+  width: 1200px;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+.left-wrapper {
+  position: relative;
+  width: 260px;
+  float: left;
+}
+.right-wrapper {
+  width: 920px;
+  height: 60px;
+  float: right;
+}

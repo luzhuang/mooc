@@ -1,0 +1,94 @@
+.course-list {
+  padding: 0 10px;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.course-list .list-header {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border-bottom: 1px solid #edf1f2;
+}
+.course-list .list-header .list-title {
+  font-size: 16px;
+}
+.course-list .list-header .list-filter {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.course-list .list-header .list-filter .filter-list {
+  list-style-type: none;
+  margin: 0 50px;
+  padding: 0;
+}
+.course-list .list-header .list-filter .filter-list .filter-item {
+  float: left;
+  text-align: center;
+  width: 100px;
+  height: 20px;
+}
+.course-list .list-header .list-filter .filter-list .filter-item a {
+  color: #787d82;
+}
+.course-list .list-header .list-filter i {
+  position: absolute;
+  top: -13px;
+  right: 0px;
+  width: 60px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+.course-list .list-body {
+  padding: 10px 0;
+}
+.course-list .list-body ul {
+  list-style-type: none;
+  padding: 0;
+}
+.course-list .list-body ul li {
+  font-size: 0;
+  float: left;
+  width: 280px;
+  margin: 5px 10px;
+  box-shadow: 0 1px 2px #c5c5c5;
+}
+.course-list .list-body ul li:hover {
+  box-shadow: 0 2px 8px #bbb;
+}
+.course-list .list-body ul li:hover img {
+  transform: scale(1.1);
+}
+.course-list .list-body ul li .course-img {
+  overflow: hidden;
+  width: 280px;
+  height: 140px;
+}
+.course-list .list-body ul li .course-img img {
+  width: 280px;
+  height: 140px;
+  overflow: hidden;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+}
+.course-list .list-body ul li .course-title {
+  font-size: 16px;
+  text-align: center;
+  margin: 10px 0;
+}
+.course-list .list-body ul li span {
+  font-size: 12px;
+  color: #b4bbbf;
+  margin-bottom: 10px;
+}
+.course-list .list-body ul li .people-num {
+  float: right;
+  margin-right: 10px;
+}
+.course-list .list-body ul li .update-time {
+  float: left;
+  margin-left: 10px;
+}

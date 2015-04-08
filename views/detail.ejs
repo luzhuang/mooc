@@ -1,0 +1,44 @@
+<link rel='stylesheet' href='/stylesheets/detail.css'/>
+<%- include header%>
+  <div class="main">
+    <h2><%=title%></h2>
+    <div class="banner">
+      <div class="left">
+        <img src=<%=courseImg%> width='600' height='340' alt="">
+      </div>
+      <div class="mid">
+        <ul>
+          <li><span>学习人数：</span><em class="people-num"><%=peopleNum%></em></li>
+          <li><span>课程时长：</span><em class="course-length"><%=courseLength%></em></li>
+          <li><span>课程难度：</span><em class="course-difficulty"><%=courseDifficulty%></em></li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="">
+           <div class="start">开始学习</div>
+        </a>
+      </div>
+    </div>
+    <div class="left-wrap">
+      <div class="course-intro">
+        <h4>课程介绍</h4>
+        <span class="detail"></span>
+      </div>
+      <div class="course-outline">
+        <h4>课程提纲</h4>
+        <span class="detail"></span>
+      </div>
+    </div>
+    <div class="right-wrap">
+      <div class="course-teacher">
+        <h4>授课老师</h4>
+        <h5><%=courseTeacher%></h5>
+        <span class="detail"></span>
+      </div>
+      <div class="course-notice">
+        <h4>课程须知</h4>
+        <span class="detail"></span>
+      </div>
+    </div>
+  </div>
+<%- include footer%>

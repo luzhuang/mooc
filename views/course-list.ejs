@@ -1,0 +1,28 @@
+<div class="course-list">
+  <div class="list-header cf">
+    <span class="list-title"><%=menuItems[0]%></span>
+    <div class="list-filter">
+      <ul class="filter-list cf">
+        <li class="filter-item"><a href="javascript:;">最新上线</a></li>
+        <li class="filter-item"><a href="javascript:;">最受欢迎</a></li>
+      </ul>
+      <i class="more-filter iconfont">&#xe61b;</i>
+    </div>
+  </div>
+  <div class="list-body">
+      <ul class="cf">
+        <% for (var i=0;i<courseList.length;i++) { %>
+          <li>
+            <a href="">
+              <div class="course-img">
+                <img src=<%=courseList[i].img%>>
+              </div>
+              <p class="course-title"><%=courseList[i].title%></p>
+              <span class="update-time"><%=courseList[i].updateTime%></span>
+              <span class="people-num"><%=courseList[i].peopleNum%>人学习</span>
+            </a>
+          </li>
+        <% } %>
+      </ul>
+  </div>
+</div> 
